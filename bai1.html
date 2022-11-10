@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Bài 1</title>
+    <style>
+table, th, td{
+  border: 1px solid;
+}
+th, td{
+  width:auto;
+  height:20px;
+}
+    </style>
+
+</head>
+<body>
+    <div>
+      <table id="tab">
+        <tr>
+          <th>Toán</th>
+          <th>Hóa</th>
+          <th>Sinh</th>
+          <th>Trung Bình</th>
+        </tr>
+        <tr>
+          <td id="s1"></td>
+          <td id="s2"></td>
+          <td id="s3"></td>
+          <td id="s4"></td>
+        </tr>
+        
+      </table>
+    </div>
+    <script>
+      let sc1 = prompt('Enter your Maths score!');
+      let sc2 = prompt('Enter your Chemistry score!');
+      let sc3 = prompt('Enter your Bio score!');
+      let maths = parseInt(sc1);
+      let chems = parseInt(sc2);
+      let bio = parseInt(sc3);
+      let avg = (maths+chems+bio)/3;
+      document.getElementById('s1').innerHTML = sc1;
+      document.getElementById('s2').innerHTML = sc2;
+      document.getElementById('s3').innerHTML = sc3;
+      document.getElementById('s4').innerHTML = avg;
+    </script>
+</body>
+</html>
