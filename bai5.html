@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+    <style>
+        p{
+            width:10%;
+            height:25px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="number" id="firstnum" value="num1">
+        <input type="number" id="secondnum" value="num2"><br>
+        <label>Result</label>
+        <p id="ptag"></p><br>
+        <button onclick="ad()">Addition +</button>
+        <button onclick="su()">Subtraction -</button>
+        <button onclick="mu()">Multiplication *</button>
+        <button onclick="di()">Division /</button>
+    </div>
+    <script>
+        function ad() {
+            let a = parseInt(document.getElementById('firstnum').value);
+            let b = parseInt(document.getElementById('secondnum').value);
+            if(a+b!=null){
+                document.getElementById('ptag').innerHTML = a+b;
+            }
+        }
+        function su() {
+            let a = parseInt(document.getElementById('firstnum').value);
+            let b = parseInt(document.getElementById('secondnum').value);
+            if(a-b!=null){
+                document.getElementById('ptag').innerHTML = a-b;
+            }
+        }
+        function mu() {
+            let a = parseInt(document.getElementById('firstnum').value);
+            let b = parseInt(document.getElementById('secondnum').value);
+            if(a*b!=null){
+                document.getElementById('ptag').innerHTML = a*b;
+            }
+        }
+        function di() {
+            let a = parseInt(document.getElementById('firstnum').value);
+            let b = parseInt(document.getElementById('secondnum').value);
+            if(a/b!=null){
+                document.getElementById('ptag').innerHTML = a/b;
+            }
+        }
+
+    </script>
+</body>
+</html>
